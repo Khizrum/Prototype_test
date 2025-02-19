@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Loader</title>
     <style>
-        body { margin: 0; padding: 0; }
-        iframe { width: 100vw; height: 100vh; border: none; }
+        html, body { 
+            height: 100%; /* Ensure the body and html take full height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        iframe { 
+            width: 100%; /* Full width of the screen */
+            height: 100%; /* Full height of the screen */
+            border: none; /* Remove iframe border */
+        }
     </style>
 </head>
 <body>
