@@ -5,28 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URL Loader</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
-        input, button { padding: 10px; margin: 10px; }
-        iframe { width: 100%; height: 80vh; border: 1px solid #ccc; }
+        body { margin: 0; padding: 0; }
+        iframe { width: 100vw; height: 100vh; border: none; }
     </style>
 </head>
 <body>
 
-    <h2>Load a URL</h2>
-    <input type="text" id="urlInput" value="https://606fbaa652e3.ngrok.app/pie?pieid=8&name=trackpad">
-    <button onclick="loadURL()">Load</button>
-    
     <iframe id="iframe" src="https://606fbaa652e3.ngrok.app/pie?pieid=8&name=trackpad"></iframe>
-
-    <script>
-        function loadURL() {
-            let url = document.getElementById("urlInput").value;
-            if (!url.startsWith("http")) {
-                url = "https://" + url;
-            }
-            document.getElementById("iframe").src = url;
-        }
-    </script>
 
 </body>
 </html>
